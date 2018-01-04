@@ -150,7 +150,7 @@ exports.getPremierLeagueTeamPlayers = function (teamId) {
     return deferred.promise;
 }
 
-// get Premeir league details if teamId is not specified, otherwise fetsh all teams details
+// get Premier league details if teamId is not specified, otherwise fetch all teams details
 exports.getPremierLeagueTeams = function (teamId) {
     options = {uri: bootstrapStaticUrl, json: true}
     rp(options).then(function (response) {
